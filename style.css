@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Open-sans';
+    src: url('./fonts/static/OpenSans-Regular.ttf');
+}
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Open-sans;
     margin: 0;
     background: #fff;
     color: #111;
@@ -35,7 +40,7 @@ header {
 }
 
 .page-title {
-    font-family: 'Playfair Display', serif;
+    font-family: Open-sans;
     font-size: 3rem;
     font-style: italic;
     margin-bottom: 1rem;
@@ -98,7 +103,7 @@ nav {
 }
 
 .story h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: Open-sans;
     font-style: italic;
     font-size: 1.5rem;
     text-align: center;
