@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,19 +8,19 @@
   </head>
   <body>
     <header>
-      <h1 class="page-title">The News Times</h1>
+      <h1 class="page-title" aria-label="The News Times" role="banner">The News Times</h1>
     </header>
-    <nav>
+    <nav role="navigation">
       <ul class="nav-links">
-        <li>Politics</li>
-        <li>Technology</li>
-        <li>Local</li>
-        <li>Opinion</li>
-        <li>Sports</li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Local</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#">Sports</a></li>
       </ul>
     </nav>
     <main class="news-grid">
-      <article class="story story1">
+      <article class="story story1" role="article">
         <h2>Student Learns HTML</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. consectetur
@@ -38,11 +38,11 @@
           Itaque, perspiciatis? amet consectetur adipisicing elit.....
         </p>
       </article>
-      <article class="story main-story story2">
+      <article class="story main-story story2" role="article">
         <h2><em>BREAKING: Luna is Adorable</em></h2>
         <img src="./images/Typing.jpg" alt=" some one Typing on a keyboard" />
       </article>
-      <article class="story story3">
+      <article class="story story3" role="article">
         <h2>CSS Is Apparently a Thing</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur consectetur adipisicing
@@ -54,7 +54,7 @@
           consectetur adipisicing elit... adipisicing elit...
         </p>
       </article>
-      <article class="story story4">
+      <article class="story story4" role="article">
         <h2>CSS Is Apparently a Thing</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
@@ -64,7 +64,7 @@
           quis, nihil eligendi?
         </p>
       </article>
-      <article class="story story5">
+      <article class="story story5" role="article">
         <h2>CSS Is Apparently a Thing</h2>
         <p>
           Lorem, ipsum dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor
@@ -86,6 +86,145 @@
           Itaque, perspiciatis? amet consectetur adipisicing elit...
         </p>
       </article>
+    </main>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The News Times</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+      <h1 class="page-title">The News Times</h1>
+    </header>
+
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li>
+          <a href="#" aria-label="Read Politics news section" role="link"
+            >Politics</a
+          >
+        </li>
+        <li>
+          <a href="#" aria-label="Read Technology news section" role="link"
+            >Technology</a
+          >
+        </li>
+        <li>
+          <a href="#" aria-label="Read Local news section" role="link">Local</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Read Opinion news section" role="link"
+            >Opinion</a
+          >
+        </li>
+        <li>
+          <a href="#" aria-label="Read Sports news section" role="link"
+            >Sports</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-content" role="main">
+      <section class="news-grid" role="region" aria-label="News Articles">
+        <article
+          class="story story1"
+          role="article"
+          aria-labelledby="headline1"
+        >
+          <h2 id="headline1">Student Learns HTML</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur consectetur adipisicing
+            elit... Lorem, ipsum dolor sit Lorem ipsum dolor sit amet Lorem
+            ipsum dolor sit amet exercitationem esse praesentium optio.
+            consectetur adipisicing elit. Itaque, perspiciatis? amet consectetur
+            adipisicing elit... adipisicing elit...
+          </p>
+        </article>
+
+        <article
+          class="story main-story story2"
+          role="article"
+          aria-labelledby="headline2"
+        >
+          <h2 id="headline2"><em>BREAKING: Luna is Adorable</em></h2>
+          <img
+            src="./images/Typing.jpg"
+            alt="Person typing on a keyboard"
+            role="img"
+          />
+        </article>
+
+        <article
+          class="story story3"
+          role="article"
+          aria-labelledby="headline3"
+        >
+          <h2 id="headline3">CSS Is Apparently a Thing</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur consectetur adipisicing
+            elit... Lorem, ipsum dolor sit Lorem ipsum dolor sit amet Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum
+            vero optio sit provident sed, reiciendis sapiente voluptatum
+            repellendus cumque! Modi sequi similique quis veritatis in
+            exercitationem esse praesentium optio. consectetur adipisicing elit.
+            Itaque, perspiciatis? amet consectetur adipisicing elit...
+            adipisicing elit...
+          </p>
+        </article>
+
+        <article
+          class="story story4"
+          role="article"
+          aria-labelledby="headline4"
+        >
+          <h2 id="headline4">CSS Is Apparently a Thing</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Odit provident quis
+            excepturi. Libero, culpa totam nam similique obcaecati amet
+            perferendis alias accusamus dolorem deleniti, natus ea voluptatibus
+            quis, nihil eligendi?
+          </p>
+        </article>
+
+        <article
+          class="story story5"
+          role="article"
+          aria-labelledby="headline5"
+        >
+          <h2 id="headline5">CSS Is Apparently a Thing</h2>
+          <p>
+            Lorem, ipsum dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Alias dolorum vero optio sit
+            provident sed, reiciendis sapiente voluptatum repellendus cumque!
+            Modi sequi similique quis veritatis in exercitationem esse
+            praesentium optio. consectetur adipisicing elit. Itaque,
+            perspiciatis? amet consectetur adipisicing elit... Lorem, ipsum
+            dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Alias dolorum vero optio sit provident
+            sed, reiciendis sapiente voluptatum repellendus cumque! Modi sequi
+            similique quis veritatis in exercitationem esse praesentium optio.
+            consectetur adipisicing elit. Itaque, perspiciatis? amet consectetur
+            adipisicing elit... consectetur adipisicing elit... Lorem, ipsum
+            dolor sit Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Alias dolorum vero optio sit provident
+            sed, reiciendis sapiente voluptatum repellendus cumque! Modi sequi
+            similique quis veritatis in exercitationem esse praesentium optio.
+            consectetur adipisicing elit. Itaque, perspiciatis? amet consectetur
+            adipisicing elit...
+          </p>
+        </article>
+      </section>
     </main>
   </body>
 </html>

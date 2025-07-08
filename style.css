@@ -6,6 +6,29 @@ body {
     padding-bottom: 2rem;
 }
 
+
+/** skip link for accessibility it will be hidden from the screen but will be read by screen readers **/
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+/** end of skip link for accessibility it will be hidden from the screen but will be read by screen readers **/
+
 header {
     text-align: center;
     margin-top: 2rem;
@@ -186,7 +209,5 @@ nav {
 
     }
 
-    .story {
-        border-bottom: none;
-    }
+
 }
