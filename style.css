@@ -54,7 +54,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1100px;
-    margin:  auto;
+    margin: auto;
     border: 2px solid #222;
     background: #fff;
     margin-bottom: 2rem;
@@ -99,13 +99,19 @@ nav {
 }
 
 @media (min-width: 900px) {
-    .nav-links{
+    .nav-links {
         grid-template-columns: repeat(5, 1fr);
     }
+
+    .nav-links li {
+
+        border-right: none;
+    }
+
     .news-grid {
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto auto;
-        border: none ;
+        border: none;
     }
 
     .story {
@@ -117,32 +123,39 @@ nav {
         background: #fff;
     }
 
-    .story1{
+    .story1 {
         border-left: 2px solid #222;
-        
+        border-right: 1px solid #222;
+
     }
-    .story1,
+
+    .story1 {
+        border-right: 1px solid #222;
+    }
+
+    .story3 {
+        border-right: 2px solid #222;
+    }
+
+    .main-story,
+    .story3 {
+        border-left: 1px solid #222;
+    }
+
     .main-story {
-        border-right: 2px solid #222;
-    }
-
-    .main-story,
-    .story3 {
-        border-left: 2px solid #222;
-    }
-    .story3{
-        border-right: 2px solid #222;
+        border-right: 1px solid #222;
     }
 
     .story1,
     .main-story,
     .story3 {
-        border-bottom: 3px solid #222 !important;
+        border-bottom: 2px solid #222 !important;
     }
 
     .story1 {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+
     }
 
     .main-story {
@@ -163,14 +176,16 @@ nav {
     .story5 {
         grid-column: 2 / 4;
         grid-row: 2 / 3;
+        border-right: 2px solid #222 !important;
     }
 
     .story4,
-    .story5{
+    .story5 {
         border-bottom: 2px solid #222 !important;
         border-left: 2px solid #222 !important;
-        border-right: 2px solid #222 !important;
+
     }
+
     .story {
         border-bottom: none;
     }
